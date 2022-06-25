@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kpaux <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/23 20:39:08 by kpaux             #+#    #+#             */
+/*   Updated: 2022/06/23 20:39:11 by kpaux            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line.h"
 
 char	ft_putstr(char *str)
@@ -22,7 +34,7 @@ size_t	ft_strlen(char *str)
 	return (i);
 }
 
-char	*ft_strjoin(char const *str1, char const *str2)
+char	*ft_strjoin(char const *str1, char const *str2) //revoir cette partie. 
 {
 	char	*str;
 	int		i;
@@ -43,9 +55,9 @@ char	*ft_strjoin(char const *str1, char const *str2)
 	}
 	str[i + j] = '\0';
 	return (str); 
-} // pas fini 
+} 
 
-int ft_end_of_line (char *str)
+int		ft_end_of_line (char *str)
 {
 	int	i;
 
@@ -58,4 +70,3 @@ int ft_end_of_line (char *str)
 	}
 	return (0);
 }
-
